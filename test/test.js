@@ -29,3 +29,17 @@ describe("OOP Mobile", ()=>{
             assert.equal(nokia.receive(08088017115), 08088017115 + " Call Received");
         });
     })
+
+    describe("Send a Message", ()=>{
+        it("Should send a Message", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.sendMessage("Hello", 08088017115), "Message Sent To: " + 08088017115);
+        });
+    })
+
+    describe("save contact", ()=>{
+        it("Should save a contact", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.saveContact("John", 08088017115), "The contact: John 8088017115 Has been saved");
+        });
+    })
