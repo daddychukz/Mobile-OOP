@@ -17,4 +17,15 @@ describe("OOP Mobile", ()=>{
         });
     })
 
-    
+    describe("Put on the phone", ()=>{
+        it("Show a welcome message", function(){
+            assert.equal(Mobile.start(), "Welcome...");
+        });
+    })
+
+    describe("Receive a call", ()=>{
+        it("Should receive a call", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.receive(08088017115), 08088017115 + " Call Received");
+        });
+    })
