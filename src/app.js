@@ -73,6 +73,6 @@ class Nokia extends Mobile{
         }
     } 
 
-    exports = {
+    export = {
         Mobile, Nokia
     }            
