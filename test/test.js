@@ -57,3 +57,18 @@ describe("OOP Mobile", ()=>{
             assert.equal(nokia.cameraPixel(), "13px");
         });
     })
+
+    describe("returns the color of the phone", ()=>{
+        it("should show camera pixels", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.phoneColor(), "Black");
+        });
+    })
+
+    describe("returns the brand of the phone", ()=>{
+        it("should show camera pixels", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black", "Nokia");
+            assert.equal(nokia.phoneBrand(), "Nokia");
+        });
+    })
+})
