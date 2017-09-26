@@ -43,3 +43,17 @@ describe("OOP Mobile", ()=>{
             assert.equal(nokia.saveContact("John", 08088017115), "The contact: John 8088017115 Has been saved");
         });
     })
+
+    describe("show phone model", ()=>{
+        it("Show phone model", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.model(), "N-Series");
+        });
+    })
+
+    describe("show camera pixels", ()=>{
+        it("should show camera pixels", function(){
+            let nokia = new Nokia(08088017115, 35842906450063980, 2, "2GB", "Black");
+            assert.equal(nokia.cameraPixel(), "13px");
+        });
+    })
