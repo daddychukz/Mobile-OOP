@@ -4,11 +4,11 @@
   "description": "oop using mobile phone",
   "main": "./src/app.js",
   "directories": {
-    "test": "mocha test/test",
-    "build": "babel ./src --watch -d ./dist"
+
   },
   "scripts": {
-    "test": "mocha tests/test"
+    "test": "mocha dist/test/test",
+    "build": "babel ./src --watch -d ./dist"
   },
   "author": "daddychuks",
   "license": "ISC",
